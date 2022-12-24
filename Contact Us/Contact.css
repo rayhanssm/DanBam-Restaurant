@@ -1,0 +1,282 @@
+@font-face {
+    font-family:'inter';
+    src: url(./Assets/Inter-VariableFont_slnt\,wght.ttf);
+    font-style: normal;
+    /* font-weight: 100; */
+    /* font-weight: 5000; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'inter';
+    font-style: normal;
+    /* font-family: sans-serif; */
+    /* font-weight: 5000; */
+}
+
+
+.container
+{
+    background-color: #3d144c;
+    background-size:auto;
+}
+
+.row
+{
+    /* padding: 10px; */
+    width: 100%;
+    height: 50px;
+    background-color: #faeb2c;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* padding-bottom: 100px; */
+}
+
+.row img
+{
+    margin-left: 50px;
+    height: 55px;
+    display: inline-block;
+}
+
+.dropdown
+{
+    /* background-color: rebeccapurple; */
+    margin-top: 10px;
+    margin-right: 100px;
+    text-align: center;
+    /* position: relative; */
+    /* background-color: red; */
+    height: 40px;
+    width: 200px;
+}
+
+.homebtn
+{
+    /* background-color: #fff; */
+    display: inline;
+    width: 50%;
+    z-index: 10;
+}
+
+.dropdown > .homebtn
+{
+    /* background-color: blue; */
+    /* margin-top: 10px; */
+    font-weight:600;
+    color: #4ea3fe;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.dropdown > .homebtn img
+{
+    display: inline;
+    height: 15px;
+    z-index: 2;
+}
+
+.dropdown-content
+{
+    width: 200px;
+    display: none;
+}
+
+.dropdown-content ul
+{
+    /* margin: 10px; */
+    text-align: left;
+}
+
+.dropdown-content ul li
+{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    list-style: none;
+    margin: 5px;
+}
+
+.dropdown-content ul li a
+{
+    /* width: 100px; */
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content ul li:hover
+{
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+.container > .title
+{
+    text-align: center;
+    padding:30px;
+}
+
+.container >.title h1
+{
+    color: #f52789;
+}
+
+.form
+{
+    display: block;
+    /* grid-column: ; */
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+    padding: 25px 40px;
+    max-width: 600px;
+}
+
+.form > .validation
+{
+    text-align: left;
+    color: red;
+}
+
+.form > .gender
+{
+    text-align: left;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.field{
+    color: white;
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.1);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover
+{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.branch h4
+{
+    text-align: start;
+    color: rgba(255,255,255,0.4);
+}
+
+.branch
+{
+    display: inline;
+    text-align: left;
+}
+
+.branch select, input[type="text"],textarea,.branch select option
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.branch select option
+{
+    margin: 10px;
+    background: #3d144c;
+}
+
+.form button
+{
+    font-weight: bold;
+    color: #f52789;
+    background-color: #faeb2c;
+}
+
+.form > .valid
+{
+    color: rgb(22, 228, 49);
+}
+
+.footer
+{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faeb2c;
+}
+
+
+@media only screen and (max-width:700px)
+{
+    .row
+    {
+        height: 30px;
+    }
+
+    .row img
+    {
+        margin-left: 20px;
+        height: 30px;
+        display: inline-block;
+    }
+
+    .dropdown
+    {
+        /* background-color: rebeccapurple; */
+        margin-right: 0px;
+        text-align: left;
+        position: relative;
+        /* background-color: red; */
+        height: 30px;
+        width: 150px;
+    }
+
+    .dropdown > .homebtn
+    {
+        /* background-color: blue; */
+        margin-top: 10px;
+        color: #4ea3fe;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .dropdown > .homebtn img
+    {
+        height: 10px;
+    }
+
+    .dropdown-content
+    {
+        width: 100px;
+    }
+
+    .dropdown-content ul li
+    {
+        text-align: left;
+        width: 100px;
+        /* padding: 10px; */
+        background-color: black;
+        list-style: none;
+        margin: 5px;
+    }
+    
+    .branch select option
+    {
+        font-size: 15px;
+    }
+
+    .form
+    {
+        margin: 20px;
+    }
+}

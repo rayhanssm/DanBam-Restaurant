@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <img src="Assets/Logo 2.png" alt="">
+            <div class="dropdown">
+                <div class="homebtn">
+                    Contact Us<img src="Assets/NavBar.png" alt="">
+               </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="../Home/Home.html">Home</a></li>
+                        <li><a href="../Menu/Menu.html">Menu</a></li>
+                        <li><a href="../Location/LocationPage.html">Location</a></li>
+                        <li><a href="../About Us/AboutUs.html">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="form">
+            <div class="validation" id="validation"></div>
+            <input name="urname" type="text" placeholder="Your Name" class="field">
+            <div class="validation" id="emailvalidation"></div>
+            <input name="uremail" type="text" placeholder="Your Email" class="field">
+            <!-- <input type="text" placeholder="Gender" class="field"> -->
+            <div class="branch">
+                <select name="urgender"  class="field" id=""> 
+                    <option value="0">Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </div>
+            <div class="branch">
+                <h4>DanBam's Branch Location</h4>
+                <select name="branchloc"  class="field" id=""> 
+                    <option value="0">Please Choose</option>
+                    <option value="1">Seoul</option>
+                    <option value="2">Busan</option>
+                    <option value="3">Andong</option>
+                </select>
+            </div>
+            <div class="validation" id="messagevalidation"></div>
+            <textarea name="urmessage" placeholder="Message" cols="30" rows="10" class="field"></textarea>
+            <!-- <input class="field" type="submit" value="Send Message" id="insertbtn" onclick="validate()"> -->
+            <button
+            class="field" onclick="validate()">Send Message</button>
+            <div class="valid" id="guddata"></div>
+        </div>
+
+        <div class="footer">
+            <h6>
+                Copyright @ 2021 DanBam Restaurants, All Right Reserved
+            </h6>
+        </div>
+
+        <!-- <div class="test">test</div> -->
+    </div>
+    <script src="Contact.js"></script>
+</body>
+</html>
